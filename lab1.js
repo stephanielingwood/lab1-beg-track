@@ -24,7 +24,9 @@
 */
 
 function assert(expression, failureMessage) {
-  expression || console.log("assertion failure: ", failureMessage);
+  if (!expression) { 
+    console.log("assertion failure: ", failureMessage);
+  }
 }
 
 /*
@@ -33,9 +35,6 @@ function assert(expression, failureMessage) {
 
  Remember, state is all the variables that we've declared and their current
  values.
-
- Notice: I'm using short-circuiting in the assert method. I only print out
- the failure message if our assertion is incorrect.
 
  Here are some examples for how to use the assert method:
 */
@@ -55,8 +54,8 @@ assert(1===2, "this is an assertion failure example. 1===2");
  research).  We're going to translate two sentences into meerkat speech.
 */
 
-var sentence1 = "More food please."
-var sentence2 = "Come over here so you can scratch my belly."
+var sentence1 = "More food please.";
+var sentence2 = "Come over here so you can scratch my belly.";
 
 /*
  TODO: 20 points
@@ -102,7 +101,7 @@ var animalExhibitStats = {
   "petting-zoo-open": true,
   "mostPopular": "Lucky the Emperor Penguin",
   "2ndMostPopular": "Dumbo the Depressed Donkey"
-}
+};
 
 /*
  TODO: 4 points
