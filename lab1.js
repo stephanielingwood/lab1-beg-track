@@ -9,7 +9,9 @@
  required.
 
  Save this file wherever you like. To run it, navigate (in the terminal) to
- wherever you saved it, and type: node lab1.js
+ wherever you saved it, and type:
+
+    node lab1.js
 
  Instructions for turning this lab in are in the assignment description in
  Canvas.
