@@ -24,7 +24,7 @@
 */
 
 function assert(expression, failureMessage) {
-  if (!expression) { 
+  if (!expression) {
     console.log("assertion failure: ", failureMessage);
   }
 }
@@ -39,8 +39,8 @@ function assert(expression, failureMessage) {
  Here are some examples for how to use the assert method:
 */
 
-assert(1===1);
-assert(1===2, "this is an assertion failure example. 1===2");
+assert(1 === 1);
+assert(1 === 2, "this is an assertion failure example. 1===2");
 
 /*
  TODO: 8 points
@@ -54,8 +54,8 @@ assert(1===2, "this is an assertion failure example. 1===2");
  research).  We're going to translate two sentences into meerkat speech.
 */
 
-var sentence1 = "More food please.";
-var sentence2 = "Come over here so you can scratch my belly.";
+var sentence1 = "More food please.",
+    sentence2 = "Come over here so you can scratch my belly.";
 
 /*
  TODO: 20 points
@@ -69,7 +69,6 @@ assert(sentence1 === "chirp chirp chirp.", "sentence 1 should have 3 chirps");
 assert(sentence2 === "chirp chirp chirp chirp chirp chirp chirp chirp chirp.",
   "sentence 2 should have 9 chirps");
 
-
 /* ----------------- Favorite Animals ----------------------------------------
  The zoo is closing in 20 minutes. You still haven't seen your four favorite
  animals. You only have time for one. Use Math.random() to pick which animal
@@ -77,8 +76,8 @@ assert(sentence2 === "chirp chirp chirp chirp chirp chirp chirp chirp chirp.",
  Hint: read the whole Math.random description on that page and try the examples
 */
 
-var favoriteAnimals = ["elephant", "penguin", "eagle", "camel"];
-var nextAnimal;
+var favoriteAnimals = [ "elephant", "penguin", "eagle", "camel" ],
+    nextAnimal;
 
 // TODO: 10 points
 // Assign one of your favorite animals to nextAnimal using Math.random() to pick

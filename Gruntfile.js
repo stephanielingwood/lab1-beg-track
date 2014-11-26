@@ -11,7 +11,10 @@ module.exports = function(grunt) {
     jscs: {
       src: srcFiles,
       options: {
-        preset: "jquery"
+        preset: "jquery",
+        requireDotNotation: null,
+        disallowMultipleVarDecl: null,
+        requireMultipleVarDecl: null
       }
     }
   });
