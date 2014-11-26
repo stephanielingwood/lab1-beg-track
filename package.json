@@ -1,0 +1,12 @@
+{
+  "name": "lab1-beg-track",
+  "version": "0.0.0",
+  "description": "Codefellows Foundations II: Javascript, Lab 1, Beginner Track",
+  "dependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0"
+  },
+  "devDependencies": {
+    "grunt-jscs": "^0.8.1"
+  }
+}
