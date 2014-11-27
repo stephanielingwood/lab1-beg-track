@@ -8,8 +8,7 @@
  word TODO in comments.  Each TODO will have a description of what is
  required.
 
- Save this file wherever you like. To run it, navigate (in the terminal) to
- wherever you saved it, and type:
+ To run this file, type the following:
 
     node lab1.js
 
