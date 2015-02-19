@@ -17,8 +17,8 @@
  Instructions for turning this lab in are in the assignment description in
  Canvas.
 
- I'm happy to answer any questions at: mel@codefellows.org. I will post the
- questions i receive and the answers i give to a discussion group in Canvas.
+ I'm happy to answer any questions on Slack or through the discussions in Canvas. I will post the
+ questions I receive and the answers I give to a discussion group in Canvas.
 
 */
 
@@ -133,6 +133,10 @@ assert(animalExhibitStats["2ndMostPopular"] === "Dumbo the Depressed Donkey",
  run the tools with:
   ./node_modules/.bin/grunt jshint
   ./node_modules/.bin/grunt jscs
+
+  or, if you installed grunt globally, you can just type
+  $ grunt
+   and it will run both.
 
  Error and warning descriptions will be printed in the terminal.
  To get full points, correct all of the errors/warnings.
