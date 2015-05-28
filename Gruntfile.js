@@ -5,16 +5,23 @@ module.exports = function(grunt) {
     jshint: {
       files: srcFiles,
       options: {
-        sub: true
+        globalstrict: true,
+        quotmark: false,
+        smarttabs: true,
+        trailing: true,
+        undef: true,
+        unused: true,
+        indent: 2,
+        node: true
       }
     },
     jscs: {
       src: srcFiles,
       options: {
-        preset: "jquery",
-        requireDotNotation: null,
-        disallowMultipleVarDecl: null,
-        requireMultipleVarDecl: null
+        preset: "airbnb",
+        requireMultipleVarDecl: null,
+        validateQuoteMarks: true,
+        disallowMultipleVarDecl: true
       }
     }
   });
