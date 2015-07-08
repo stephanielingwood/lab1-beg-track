@@ -1,4 +1,3 @@
-/*jshint strict:false */
 'use strict';
 
 /* LAB 1: A Trip to Woodland Park Zoo
@@ -46,12 +45,15 @@ function assert(expression, failureMessage) {
  That will help later when you run jscs.
 */
 
-// assert(1 === 1);
-// assert(1 === 2, 'this is an assertion failure example. 1 === 2');
+assert(1 === 1, '1 equals 1 - this assert will pass.');
+assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.');
 
-/*------------------Assertions------------------------------------------------
- TODO: 8 points
- Invoke assert twice. (In other words, create two assertions like the ones above.)
+/* ===========================================================================
+------------------Assertions (8 points total)---------------------------------
+==============================================================================
+ TODO: Invoke assert twice (4 points each).
+ (In other words, create two assertions like the ones
+ above.)
  Use any boolean expressions that you like, but preferably
  zoo-themed.  Make one pass and one fail. In the failure message, describe why
  it failed.
@@ -59,7 +61,9 @@ function assert(expression, failureMessage) {
 
 //your code goes here
 
-/* ----------------- Meerkats -------------------------------------------------
+/* ========================================================================
+----------------- Meerkats (20 points total)-------------------------------
+===========================================================================
  Meerkats make a sort of chirping noise (according to my 30 seconds of
  research).  We're going to translate two sentences into meerkat speech.
 */
@@ -68,20 +72,29 @@ var sentence1 = 'More food please.';
 var sentence2 = 'Come over here so you can scratch my belly.';
 
 /*
- TODO: 20 points
  Your goal is to replace the words in the above sentences with 'chirp' The
  assertions at the end of this section should pass when you're done.
- Use **two** different kinds of loops to implement this. (10 points each.)
  HINT: the 'split' method on String will be useful.
 */
 
+// TODO: part #1: use a for loop to replace the words in sentence 1 with
+// 'chirp' (10 points)
+
 // your code goes here
 
+// TODO: part #2: use a while or do-while loop to replace the words in sentence 2
+// with 'chirp' (10 points)
+
+// your code goes here
+
+// Leave these assertions as-is! If they pass, your code works.
 assert(sentence1 === 'chirp chirp chirp.', 'sentence 1 should have 3 chirps');
 assert(sentence2 === 'chirp chirp chirp chirp chirp chirp chirp chirp chirp.',
   'sentence 2 should have 9 chirps');
 
-/* ----------------- Favorite Animals ----------------------------------------
+/* ========================================================================
+----------------- Favorite Animals (10 points)-----------------------------
+===========================================================================
  The zoo is closing in 20 minutes. You still haven't seen your four favorite
  animals. You only have time for one. Use Math.random() to pick which animal
  to see next.
@@ -98,7 +111,9 @@ var nextAnimal;
 
 assert(nextAnimal, 'assign something to nextAnimal');
 
-/* ----------------- Survey Says... ---------------------------------------
+/* =====================================================================
+----------------- Survey Says... (12 points total) ---------------------
+========================================================================
  Like any conscientious business, the Woodland Park Zoo collects statistics
  about its animal exhibits. The animalExhibitsStats object is a summary of what
  they found.
@@ -135,8 +150,10 @@ assert(animalExhibitStats['2ndMostPopular'] === 'Dumbo the Depressed Donkey',
 
 // your assert goes here
 
-/* ----------------- Code Style ----------------------------------------
- TODO: 10 points
+/* ==================================================================
+----------------- Code Style (10 points) ----------------------------
+=====================================================================
+ TODO: 10 points (5 points each for passing jshint and jscs)
  Now, we're going to use two tools: jshint and jscs, to check our code for
  best-practices and style consistency.
 
